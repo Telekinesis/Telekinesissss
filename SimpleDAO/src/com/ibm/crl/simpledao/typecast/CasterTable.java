@@ -16,8 +16,6 @@ public class CasterTable {
 			
 			@Override
 			public boolean accept(Method m) {
-				if(m.getParameterTypes().length != 1)
-					return false;
 				return m.isAnnotationPresent(CasterMethod.class);
 			}
 		});
